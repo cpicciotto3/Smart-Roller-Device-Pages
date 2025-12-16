@@ -24,20 +24,22 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
-    .logo {
-      text-align: center;
-      margin-bottom: 0.8rem;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
-    .logo img {
-      max-width: 160px;
-      width: 100%;
-      height: auto;
-    }
-
-    h1 {
+    .header h1 {
       font-size: 1.4rem;
-      margin-top: 0;
+      margin: 0;
+    }
+
+    .header img {
+      height: 36px;
+      width: auto;
     }
 
     table {
@@ -60,23 +62,29 @@
       font-size: 0.8rem;
       color: #666;
     }
+
+    /* Optional: stack on very small screens */
+    @media (max-width: 360px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="card">
 
-    <!-- Logo -->
-    <div class="logo">
+    <div class="header">
+      <h1>SR-A2</h1>
       <img src="logo.png" alt="Sentact Logo">
     </div>
 
-    <h1>SR-A2</h1>
-
     <table>
       <tr><td>Model</td><td>Smart Roller – Edge</td></tr>
-      <tr><td>Roller Dimensions</td><td>86mm width, 2.125"; diameter</td></tr>
-      <tr><td>Sensors</td><td>9 Width, 16 Radial. 3/4"; sensor width</td></tr>
+      <tr><td>Roller Dimensions</td><td>86mm width, 2.125&quot; diameter</td></tr>
+      <tr><td>Sensors</td><td>9 Width, 16 Radial. 3/4&quot; sensor width</td></tr>
       <tr><td>Sensor Pitch</td><td>2.1mm</td></tr>
       <tr><td>Electrode Size</td><td>1 × 7 mm</td></tr>
       <tr><td>Calibration</td><td>Yes</td></tr>
@@ -88,6 +96,7 @@
     <div class="footer">
       Last updated: 2025-12-12
     </div>
+
   </div>
 </body>
 </html>
