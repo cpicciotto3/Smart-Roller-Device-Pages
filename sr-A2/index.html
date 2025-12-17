@@ -22,6 +22,7 @@
       padding: 1.2rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: relative; /* 🔹 anchor for logo */
     }
 
     .header {
@@ -58,15 +59,15 @@
       color: #666;
     }
 
-    /* Bottom-right logo */
-    .logo-bottom-right {
-      position: fixed;
+    /* Logo inside card */
+    .logo-card-bottom-right {
+      position: absolute;
       bottom: 12px;
       right: 12px;
       height: 36px;
       width: auto;
       opacity: 0.85;
-      pointer-events: none; /* prevents accidental taps */
+      pointer-events: none;
     }
   </style>
 </head>
@@ -95,10 +96,10 @@
       Last updated: 2025-12-12
     </div>
 
-  </div>
+    <!-- Logo anchored to card -->
+    <img src="logo.png" alt="Sentact Logo" class="logo-card-bottom-right">
 
-  <!-- Fixed bottom-right logo -->
-  <img src="logo.png" alt="Sentact Logo" class="logo-bottom-right">
+  </div>
 
 </body>
 </html>
