@@ -44,26 +44,22 @@
       width: 40%;
     }
 
-    /* Footer row */
+    /* Footer stack */
     .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;          /* 🔹 vertical centering */
-      margin-top: 0.8rem;
-
-      /* cancel right padding so logo hits card edge */
-      margin-right: -1.2rem;
-    }
-
-    .card-footer .footer-text {
-      font-size: 0.8rem;
-      color: #666;
+      margin-top: 0.9rem;
     }
 
     .card-footer img {
-      height: 36px;
+      height: 44px;          /* 🔹 increased from 32px */
       width: auto;
-      opacity: 0.85;
+      opacity: 0.9;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .footer-text {
+      font-size: 0.8rem;
+      color: #666;
     }
   </style>
 </head>
@@ -89,10 +85,10 @@
     </table>
 
     <div class="card-footer">
+      <img src="logo.png" alt="Sentact Logo">
       <div class="footer-text">
         Last updated: 2025-12-12
       </div>
-      <img src="logo.png" alt="Sentact Logo">
     </div>
 
   </div>
